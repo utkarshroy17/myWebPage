@@ -9,3 +9,7 @@ function openNav() {
 // $(document).ready(function(){
 //     $("#master-placeholder").load("master.html");
 // });
+
+$(document).ready(function(){
+    $("#master-placeholder").load("https://raw.githubusercontent.com/utkarshroy17/myWebPage/master/master.html")
+});
