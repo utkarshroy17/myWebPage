@@ -159,12 +159,48 @@ p {
     padding: 5px 0;
   
     /* Position the tooltip */
-    width: 120px;
-    top: 100%;
-    left: 50%; 
-    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
   }
   
   #contact:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .ed-history {
+    border-style:outset;
+    
+    width: 900px;
+    height:525px;
+    margin-top: 50px;
+    margin-left: 175px;
+    padding:25px;
+
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .ed-history table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 5px solid #C0C0C0;
+  }
+  
+  .ed-history th, td {
+    text-align: left;
+    padding: 8px;
+    width:50px; 
+    padding-right: 10px;
+    border: 2px solid #C0C0C0;
+    text-align: center; 
+  }
+
+  .ed-history li {
+    text-align: left;
+  }
+  
+  .ed-history tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+    border: 5px solid #C0C0C0;
   }
