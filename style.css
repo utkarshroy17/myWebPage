@@ -127,6 +127,10 @@ p {
     transition: 0.3s;
   }
 
+  .bar {
+    right: 0px;
+  }
+
   .menu a {
     border-block-end-style: groove;
     border-radius: 20px;
@@ -136,7 +140,7 @@ p {
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
+  .sidenav button {
     position: absolute;
     top: 0;
     right: 25px;

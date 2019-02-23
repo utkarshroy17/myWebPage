@@ -19,17 +19,15 @@
 //   }
 // );
 
-$('#nav-toggle').click(function() {
-  if($('#nav-toggle').hasClass('active')){
-    $('.menu').animate({
-      right: "0px"
-    }, 200);
-  }else{
-    $('.menu').animate({
-      right: "-285px"
-    }, 200);
-  }
+$('#nav-toggle').click(function(e) {
+  e.stopPropagation();
+  $(".menu").toggleClass('bar')
 });
+$('body').click(function(e) {
+  if ($('.menu').hasClass('bar')) {
+    $(".menu").toggleClass('bar')
+  }
+})
 
 //master page layout
 $(document).ready(function(){
