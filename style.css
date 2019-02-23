@@ -12,7 +12,7 @@
     right: 25px;  */
 } 
 
-.intro {
+.intro, .ed-history, .projects {
     border-style:outset;
     
     width: 750px;
@@ -127,7 +127,7 @@ p {
     transition: 0.3s;
   }
 
-  .menu-items a {
+  .menu a {
     border-block-end-style: groove;
     border-radius: 20px;
   }
@@ -168,16 +168,16 @@ p {
   }
 
   .ed-history {
-    border-style:outset;
-    
+    /* border-style:outset;
+     */
     width: 900px;
     height:525px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-left: 175px;
-    padding:25px;
+    /*padding:25px;
 
     box-sizing: border-box;
-    position: relative;
+    position: relative; */
   }
 
   .ed-history table {
@@ -203,4 +203,46 @@ p {
   .ed-history tr:nth-child(even) {
     /* background-color: #f2f2f2; */
     border: 5px solid #C0C0C0;
+  }
+
+  .projects {
+    width: 900px;
+    height:525px;
+    margin-left: 175px;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  } 
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
