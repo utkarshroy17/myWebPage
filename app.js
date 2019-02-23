@@ -21,10 +21,13 @@
 
 $('#nav-toggle').click(function(e) {
   e.stopPropagation();
+  alert("menu was clicked");
   $(".menu").toggleClass('bar')
 });
+
 $('body').click(function(e) {
   if ($('.menu').hasClass('bar')) {
+    alert("body was clicked");
     $(".menu").toggleClass('bar')
   }
 })
