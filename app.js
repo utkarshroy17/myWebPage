@@ -19,24 +19,41 @@
 //   }
 // );
 
-$(document).ready(function(){
-  $('#nav-toggle').click(function(e) {
-    e.stopPropagation();
-    alert("menu was clicked");
-    $(".menu").toggleClass('bar')
-  });
+// $(document).ready(function(){
+  
+// });
+
+const $menu = $('.sidenav');
+
+$(document).mouseup(function (e) {
+  alert("click");
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.removeClass('is-active');
+  }
+ });
+
+$('.closebtn').on('click', () => {
+  alert("click 2");
+  $menu.toggleClass('is-active');
 });
 
 
-$(document).ready(function() {
-  $('body').click(function(e) {
-    alert("body was clicked");
-    if ($('.menu').hasClass('bar')) {
+// $(document).ready(function() {
+//   $('#mySideNav').click(function(e) {
+//     e.stopPropagation();
+//     alert("menu was clicked");
+//     $(".menu").toggleClass('bar')
+//   });
+//   $('body').click(function(e) {
+//     alert("body was clicked");
+//     if ($('.menu').hasClass('bar')) {
       
-      $(".menu").toggleClass('bar')
-    }
-  })
-});
+//       $(".menu").toggleClass('bar')
+//     }
+//   })
+// });
 
 
 //master page layout

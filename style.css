@@ -127,10 +127,6 @@ p {
     transition: 0.3s;
   }
 
-  .bar {
-    right: 0px;
-  }
-
   .menu a {
     border-block-end-style: groove;
     border-radius: 20px;
@@ -249,4 +245,12 @@ p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  .is-active .menu {
+    display: block;
+  }
+
+  .toggle, .menu {
+    width: 100%;
   }
