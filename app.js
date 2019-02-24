@@ -1,12 +1,12 @@
 
 //Side navigation bar
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "200px";
-//   }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
   
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-// }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 // $('body').click(function(e) {
 //   if ($('.sidenav').hasClass('bar')) {
@@ -27,17 +27,16 @@ const $menu = $('.sidenav');
 
 $(document).mouseup(function (e) {
   alert("click");
-   if (!$menu.is(e.target) // if the target of the click isn't the container...
-   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-   {
-     $menu.removeClass('is-active');
-  }
+   if(document.getElementById("mySidenav").style.width !== "0") {
+      closeNav();
+   }
+    
  });
 
-$('.closebtn').on('click', () => {
-  alert("click 2");
-  $menu.toggleClass('is-active');
-});
+// $('.closebtn').on('click', () => {
+//   alert("click 2");
+//   $menu.toggleClass('is-active');
+// });
 
 
 // $(document).ready(function() {
