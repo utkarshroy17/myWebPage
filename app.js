@@ -19,18 +19,25 @@
 //   }
 // );
 
-$('#nav-toggle').click(function(e) {
-  e.stopPropagation();
-  alert("menu was clicked");
-  $(".menu").toggleClass('bar')
+$(document).ready(function(){
+  $('#nav-toggle').click(function(e) {
+    e.stopPropagation();
+    alert("menu was clicked");
+    $(".menu").toggleClass('bar')
+  });
 });
 
-$('body').click(function(e) {
-  if ($('.menu').hasClass('bar')) {
+
+$(document).ready(function() {
+  $('body').click(function(e) {
     alert("body was clicked");
-    $(".menu").toggleClass('bar')
-  }
-})
+    if ($('.menu').hasClass('bar')) {
+      
+      $(".menu").toggleClass('bar')
+    }
+  })
+});
+
 
 //master page layout
 $(document).ready(function(){
