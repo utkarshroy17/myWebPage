@@ -8,52 +8,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-// $('body').click(function(e) {
-//   if ($('.sidenav').hasClass('bar')) {
-//     $(".sidenav").toggleClass('bar')
-//   }
-// })
-
-// $(document).click(function(e) {
-//     $('.sidenav').animate({right: "-285px"}, 200);
-//   }
-// );
-
-// $(document).ready(function(){
-  
-// });
-
-const $menu = $('.sidenav');
-
 $(document).mouseup(function (e) {
-  alert("click");
+  // alert("click");
    if(document.getElementById("mySidenav").style.width !== "0") {
       closeNav();
-   }
-    
+   }    
  });
-
-// $('.closebtn').on('click', () => {
-//   alert("click 2");
-//   $menu.toggleClass('is-active');
-// });
-
-
-// $(document).ready(function() {
-//   $('#mySideNav').click(function(e) {
-//     e.stopPropagation();
-//     alert("menu was clicked");
-//     $(".menu").toggleClass('bar')
-//   });
-//   $('body').click(function(e) {
-//     alert("body was clicked");
-//     if ($('.menu').hasClass('bar')) {
-      
-//       $(".menu").toggleClass('bar')
-//     }
-//   })
-// });
-
 
 //master page layout
 $(document).ready(function(){
