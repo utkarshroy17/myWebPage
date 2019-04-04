@@ -22,7 +22,7 @@
     padding:25px;
     box-sizing: border-box;
     position: relative;
-    overflow: auto;
+    /* overflow: auto; */
     
     /* margin: 100px 50px 25px 300px; */
     /* margin:auto; */
@@ -208,8 +208,16 @@ p {
 
   .projects {
     width: 900px;
-    height: 400px;
+    height: 250px;
     margin-left: 175px;
+    /* box-sizing: border-box; */
+    /* position: relative;     */
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  #proj p {
+    width: 100%;
   }
 
   .accordion {
