@@ -6,16 +6,57 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="app.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
-        <!-- <script>
-            $(document).ready(function(){
-                $("#master-placeholder").load("https://raw.githubusercontent.com/utkarshroy17/myWebPage/master/master.html")
-            });
-        </script> -->
         <div id="master-placeholder"></div>
      
+        <div class="workex">
+            <figure class="work-image">
+                <img class="kpmg-logo" src="kpmg.jpg">
+                <figcaption style="font-size: 125%">Software Developer</figcaption>
+                <button id="workBtn" class="dropdown-btn" >Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="javascript:void(0)" class="gclasBtn" onclick="changeToOne()">gCLAS</a>
+                    <a href="javascript:void(0)" class="opsBtn" onclick="changeToTwo()">OperationsVault</a>
+                </div>
+            </figure>
+            <div class="work-info">
+                <h3 id="info-header"></h3>
+                <p id="details">
+                    I worked at KPMG from July 2016 to April 2018. In my time at KPMG, I worked on 
+                    technologies such as C#, .NET, MVC, ember.js, ORACLE, SQL Server, JavaScript, 
+                    jQuery, HTML and CSS. I worked on 2 projects during this time. I got to learn 
+                    a lot during my these 2 years and I'm forever grateful to have been part of KPMG.
+                </p>
+            </div>
+        </div>
     </body>
+
+    <script>
+
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        // alert("clicked");
+        for (i = 0; i < dropdown.length; i++) {
+            
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                document.getElementById("info-header").textContent = "";
+                document.getElementById("details").textContent = "I worked at KPMG from July 2016 to April 2018. In my time at KPMG, I worked on technologies such as C#, .NET, MVC, ember.js, ORACLE, SQL Server, JavaScript, jQuery, HTML and CSS. I worked on 2 projects during this time. I got to learn a lot during my these 2 years and I'm forever grateful to have been part of KPMG."
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+            });
+        }
+        
+    </script>
 
 </html>

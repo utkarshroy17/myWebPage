@@ -2,17 +2,18 @@
     position:absolute;
     top:25px;
     right: 25px; 
+    text-align: center;
 }
 
 .prof-image {
     width:125px;
     height:100px;
-    border-radius: 8px;    
+    border-radius: 8px; 
     /* top:50px;
     right: 25px;  */
 } 
 
-.intro, .ed-history, .projects {
+.intro, .ed-history, .projects, .workex {
     border-style:outset;
     
     width: 750px;
@@ -29,8 +30,16 @@
 
 } 
 
+.intro p, h2, figcaption {
+  color: #fff;
+}
+
+.intro p {
+  text-align: justify;
+}
+
 body {      
-    background-image:url(bg2.jpg);
+    background-image:url(bg2.jpeg);
     /* background-repeat: repeat-x;
     background-repeat: repeat-y; */
     
@@ -86,7 +95,7 @@ p {
 .header {
     overflow: hidden;
     padding: 10px 10px;
-    background-image: url("header.png");
+    /* background-image: url("header.png"); */
 }
 
 .header h1 {    
@@ -94,7 +103,7 @@ p {
     width: 20%;    
     /* border:outset;     */
     margin:0 auto;
-    color: cornsilk
+    color: #fff;
     /* line-height: 0px;  */
 }
 
@@ -117,6 +126,7 @@ p {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    color: #C0C0C0;
   }
   
   .sidenav a {
@@ -175,10 +185,7 @@ p {
     height:525px;
     /* margin-top: 50px; */
     margin-left: 175px;
-    /*padding:25px;
-
-    box-sizing: border-box;
-    position: relative; */
+    color: #f1f1f1;
   }
 
   .ed-history table {
@@ -204,6 +211,10 @@ p {
   .ed-history tr:nth-child(even) {
     /* background-color: #f2f2f2; */
     border: 5px solid #C0C0C0;
+  }
+
+  .ed-history a {
+    color: #C0C0C0;
   }
 
   .projects {
@@ -263,3 +274,81 @@ p {
   .toggle, .menu {
     width: 100%;
   }
+
+  .workex {
+    text-align: center;    
+    height: 300px;
+  }
+
+  .work-image {
+    position: absolute;
+    top:25px;
+    left:25px;
+  }
+
+  .kpmg-logo {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .work-image figcaption {
+    margin-top: 10px;
+  }
+
+  .dropdown-btn {
+    margin-top:15px;
+    width:90%;
+    height: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .dropdown-container a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: whitesmoke;
+    width: 80%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;    
+  }
+
+  .active {
+    background-color: #262626;
+    color: white;
+  }
+  
+  .dropdown-container a:hover, .dropdown-btn:hover {
+    color:white;
+    background-color: #444;
+  }
+
+  .work-info {
+    color: white;
+    float: right;
+    text-align: justify
+  }
+
+
+
+  

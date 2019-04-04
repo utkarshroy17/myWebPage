@@ -55,3 +55,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 }, false);
+
+function changeToOne() {
+  document.getElementById("info-header").textContent = "gCLAS";
+  document.getElementById("details").textContent = "The first project was a large scale web application which is used by banks in North America to process their customer credit reports, create cashflows and calculate their expected credit loss every month. This allowed them to comply with financial regulations such as CECL and IFRS9. I worked in a team of 10 developers to develop, scale, manage, automate and deploy this application. We had clients from US, Canada and a few banks in Middle East and South East Asia. It was one of the top earning projects for KPMG."
+}
+
+function changeToTwo() {
+  document.getElementById("info-header").textContent = "OperationsVault";
+  document.getElementById("details").textContent = "The other project was an inhouse project to create an application used by KPMG employees to fill time cards, basically an application where the employees could enter the number of hours they worked on a particular engagement in a week, to keep track of their tasks. This was used by our team’s managers to give monthly reports to the leadership team. This was built from scratch by a small team of 3 developers."
+}
+// document.getElementById("workBtn").addEventListener("click", openDropdown);
+
+// function openDropdown() {
+//   var dropdown = document.getElementsByClassName("dropdown-btn");
+//   var i;
+  
+//   alert("clicked");
+//   for (i = 0; i < dropdown.length; i++) {
+    
+//     dropdown[i].addEventListener("click", function() {
+//       this.classList.toggle("active");
+//       var dropdownContent = this.nextElementSibling;
+//       if (dropdownContent.style.display === "block") {
+//         dropdownContent.style.display = "none";
+//       } else {
+//         dropdownContent.style.display = "block";
+//       }
+//     });
+//   }
+// }
